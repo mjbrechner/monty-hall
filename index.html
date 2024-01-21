@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Monty Hall Simulator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/profile-pic.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>This is a simulation of the Monty Hall problem.</h1>
+        <h2 id="round-info">hi</h2>
+        <p>The Monty Hall problem, which can be summarized on <a
+                href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Wikipedia</a>, involves picking... </p>
+
+
+        <div id="playing-area">
+            <div class="door-1-outer" id="door-1">
+                <div class="door-1-inner" onclick="choose1()"">
+                    <div id="door-1-front"></div>
+                    <div id="door-1-back"></div>
+                </div>
+            </div>
+
+            <div class="door-2-outer" id="door-2">
+                <div class="door-2-inner" onclick="choose2()"">
+                    <div id="door-2-front"></div>
+                    <div id="door-2-back"></div>
+                </div>
+            </div>
+
+            <div class="door-3-outer" id="door-3">
+                <div class="door-3-inner" onclick="choose3()"">
+                    <div id="door-3-front"></div>
+                    <div id="door-3-back"></div>
+                </div>
+            </div>
+
+        </div>
+        <button id="reset-button" onclick="resetGame()">reset</button>
+        <button id="round2button" onclick="round2()">Next Step</button>
+    </main>
+
+    <footer>
+        <p>
+            <script>
+                const thisYear = new Date().getFullYear();
+                if (thisYear === 2024) {
+                    document.write(`Copyright © 2024 `);
+                } else {
+                    document.write(`Copyright © 2024-${thisYear} `);
+                }
+            </script>
+            <a class="credits-link" href="https://github.com/mjbrechner">M.J. Brechner</a>
+        </p>
+    </footer>
+    <script src="javascript/index.js" defer></script>
+</body>
+
+</html>
