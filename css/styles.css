@@ -124,7 +124,7 @@ button {
     margin-top: 2em;
 }
 
-#reset-button, #round2button {
+#reset-button, #round2button, #keep-button, #change-button {
 visibility: hidden;
 }
 
